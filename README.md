@@ -4,8 +4,6 @@ This tool is creating squares with randomly created colors. Get inspired, while 
 
 >Written in pur JS, no Framework needed.
 
-**[DEMO](https://color-inspirator-vanilla-js.herokuapp.com/)**
-
 ## Interaction
 
 **Mouse**  
