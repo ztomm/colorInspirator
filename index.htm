@@ -1,49 +1,47 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>colorInspirator</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-
 	<link rel="stylesheet" type="text/css" href="dist/css/colorInspirator.css" />
-
 	<script type="text/javascript" src="dist/js/colorInspirator.js"></script>
-
-    <script type="text/javascript">
+	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function () {
 			colorInspirator = new ColorInspirator().init({
-                frameAmount: 200,   // starting amount
-                minFrames: 1,       // min frames
-                maxFrames: 800,     // max frames
-                frameSize: 70,      // starting framesize
-                stepSize: 10,       // +- pixels when changing the size
-                minFrameSize: 10    // min framesize
-            });
+				frameAmount: 200,   // starting amount
+				minFrames: 1,       // min frames
+				maxFrames: 800,     // max frames
+				frameSize: 70,      // starting framesize
+				stepSize: 10,       // +- pixels when changing the size
+				minFrameSize: 10    // min framesize
+			});
 		});
-    </script>
-    
+	</script>
 </head>
+
 <body>
 
-    <div id="app">
-    
-        <header>
-            <h1>color inspirator</h1>
-            <p class="info"></p>
-            <div class="ctrl">
-                <p><span class="cmd">click</span> to copy <span class="pipe">|</span> </p>
-                <p><span class="cmd">enter</span> for random <span class="pipe">|</span> </p>
-                <p><span class="cmd">↑↓</span> for amount <span class="pipe">|</span> </p>
-                <p><span class="cmd">← →</span> for resize <span class="pipe">|</span> </p>
-                <p><span class="cmd">shift</span> for hide and show</p>
-            </div>
-        </header>
-    
-        <div id="frames"></div>
-    
-        <footer></footer>
-    
-    </div>
+	<div id="app">
+
+		<header>
+			<h1>color inspirator</h1>
+			<p class="info"></p>
+			<div class="ctrl">
+				<p><span class="cmd">click</span> to copy <span class="pipe">|</span> </p>
+				<p><span class="cmd">enter</span> for random <span class="pipe">|</span> </p>
+				<p><span class="cmd">↑↓</span> for amount <span class="pipe">|</span> </p>
+				<p><span class="cmd">← →</span> for resize <span class="pipe">|</span> </p>
+				<p><span class="cmd">shift</span> for hide and show</p>
+			</div>
+		</header>
+
+		<div id="frames"></div>
+
+		<footer></footer>
+
+	</div>
 
 </body>
 </html>

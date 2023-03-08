@@ -1,8 +1,8 @@
 # colorInspirator
 
-This tool is creating squares with randomly created colors. Get inspired, while you are looking for colors, for example for your Webpage.
+This tool creates squares with randomly generated colors.
 
->Written in pur JS, no Framework needed.
+**[DEMO](https://ztomm.github.io/colorInspirator/)**
 
 ## Interaction
 

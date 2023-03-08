@@ -1,143 +1,145 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 body {
-    margin: 1.6rem;
-    background: #222;
-    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
-    color: #efefef;
-    line-height: 1.5;
+	margin: 1.6rem;
+	background: #222;
+	font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	color: #efefef;
+	line-height: 1.5;
 }
 
 #app {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
 }
 
 header {
-    position: relative;
-    flex: 0 0 20%;
-    margin: 0;
-    padding: 0 0 1rem 0;
-    text-align: center;
+	position: relative;
+	flex: 0 0 20%;
+	margin: 0;
+	padding: 0 0 1rem 0;
+	text-align: center;
 }
 
 footer {
-    position: relative;
-    flex: 1 0 100%;
-    margin-top: 1rem;
-    padding: 1rem 0 0 0;
-    text-align: center;
-    border-top: 1px solid #555;
+	position: relative;
+	flex: 1 0 100%;
+	margin-top: 1rem;
+	padding: 1rem 0 0 0;
+	text-align: center;
+	border-top: 1px solid #555;
 }
 
 h1 {
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing:0.05em;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 
 p {
-    margin: 1rem auto;
+	margin: 1rem auto;
 }
 
 
 p.info {
-    border-top: 1px dashed #555;
-    border-bottom: 1px dashed #555;
-    font-style: italic;
+	border-top: 1px dashed #555;
+	border-bottom: 1px dashed #555;
+	font-style: italic;
 }
 
 .ctrl span.cmd {
-    padding: 0.1rem;
-    background: #efefef;
-    border-radius: 0.1rem;
-    color: #222;
+	padding: 0.1rem;
+	background: #efefef;
+	border-radius: 0.1rem;
+	color: #222;
 }
 
 .ctrl span.pipe {
-    display: none;
+	display: none;
 }
 
 .hidden {
-    display: none;
+	display: none;
 }
 
 #frames {
-    position: relative;
-    flex: 0 0 80%;
-    text-align: center;
-    line-height: 0;
+	position: relative;
+	flex: 0 0 80%;
+	text-align: center;
+	line-height: 0;
 }
+
 #frames.alone {
-    flex: 0 0 100%;
+	flex: 0 0 100%;
 }
 
 .frame {
-    display: inline-block;
-    margin: 0.1rem;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    opacity: 0;
-    transition: 0.5;
+	display: inline-block;
+	margin: 0.1rem;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	opacity: 0;
+	transition: 0.5;
 }
 
 .frame.visible {
-    opacity: 1;
+	opacity: 1;
 }
 
 #toast {
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: .5rem 1rem;
-    background: rgba(0, 0, 0, .6);
-    border-radius: 0.5rem;
-    color: #fff;
+	position: fixed;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: .5rem 1rem;
+	background: rgba(0, 0, 0, .6);
+	border-radius: 0.5rem;
+	color: #fff;
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        margin: 1rem;
-        line-height: 2;
-    }
-    #app {
-        flex-direction: column;
-    }
-    
-    header {
-        flex: 0 0 100%;
-    }
+	body {
+		margin: 1rem;
+		line-height: 2;
+	}
 
-    p.info {
-        width: 60%;
-    }
+	#app {
+		flex-direction: column;
+	}
 
-    .ctrl p {
-        display: inline;
-    }
+	header {
+		flex: 0 0 100%;
+	}
 
-    .ctrl span.cmd {
-        display: inline;
-    }
+	p.info {
+		width: 60%;
+	}
 
-    .ctrl span.pipe {
-        display: inline-block;
-    }
+	.ctrl p {
+		display: inline;
+	}
 
-    #frames {
-        flex: 0 0 100%;
-    }
+	.ctrl span.cmd {
+		display: inline;
+	}
+
+	.ctrl span.pipe {
+		display: inline-block;
+	}
+
+	#frames {
+		flex: 0 0 100%;
+	}
 }
